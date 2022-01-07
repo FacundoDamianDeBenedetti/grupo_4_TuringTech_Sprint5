@@ -1,0 +1,34 @@
+[
+ {
+  "id": "1",
+  "productCategory": "Procesadores",
+  "productBrand": "amd",
+  "productName": "Producto Super AMD",
+  "productDescription": "AMD",
+  "productDescriptionLong": "AMDAMP",
+  "productPrice": "120",
+  "productStock": "1",
+  "productFees": "8",
+  "productDiscount": "10",
+  "productImage1": "1641336257104-ryzen5.png",
+  "productVisibility": "activo",
+  "productImportant": "destacado-si",
+  "ruta": "productos-assets\\procesadores-amd\\1641336257104-ryzen5.png"
+ },
+ {
+  "productCategory": "PlacasVideo",
+  "productBrand": "intel",
+  "productName": "Placa de video",
+  "productDescription": "Placa",
+  "productDescriptionLong": "PlacaAmp",
+  "productPrice": "100",
+  "productStock": "1",
+  "productFees": "18",
+  "productDiscount": "10",
+  "productImage1": "1641349549865-placa-de-video-1.png",
+  "productVisibility": "activo",
+  "productImportant": "destacado-si",
+  "ruta": "productos-assets\\Placa-de-video\\1641349549865-placa-de-video-1.png",
+  "id": 2
+ }
+]

@@ -1,0 +1,164 @@
+.contenedorlogin {
+  padding: 5rem;
+}
+
+.main__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.contenedor-sesion {
+  background-color: var(--rojo-fuego);
+  height: 250px;
+  width: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  border-radius: 10px;
+}
+
+.contenedor-facebook-google {
+  background-color: var(--rojo-fuego);
+  height: 250px;
+  width: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  border-radius: 10px;
+}
+
+.main__container-google button {
+  
+  margin-top: 10px;
+  border: 1px solid var(--negro-intenso);
+  width: 300px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.main__container-facebook button {
+  background-color: var(--azul-facebook);
+  border: 1px solid var(--negro-intenso);
+  width: 300px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.main__container-name-nombre input {
+  background-color: var(--blanco-agua);
+  margin-top: 10px;
+  border: 1px solid var(--negro-intenso);
+  width: 300px;
+  height: 35px;
+  font-size: 2.5rem;
+}
+
+.imagen-facebook {
+  width: 25px;
+}
+
+.imagen-google {
+  width: 25px;
+}
+
+.letra-facebook {
+  font-size: 2.5rem;
+  color: var(--blanco-agua);
+}
+
+.letra-google {
+  font-size: 2.5rem;
+  color: var(--negro-intenso);
+}
+.form-sesion {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+
+.boton-iniciar {
+  background-color: rgba(0, 0, 0, 0.445);
+  color: var(--blanco-agua);
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 1rem;
+  border: 1px solid var(--negro-intenso);
+  font-size: 2.5rem;
+}
+
+.boton-iniciar:hover{
+  color:var(--blanco-agua);
+    text-shadow: 0 0 2px var(--violeta-fuego),
+    0 0 4px var(--violeta-fuego),
+    0 0 6px var(--violeta-fuego),
+    0 0 8px var(--violeta-fuego),
+    0 0 12px var(--violeta-fuego);
+}
+.button-contraseña{
+  background-color: rgba(0, 0, 0, 0.445);
+  color: var(--blanco-agua);
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 1rem;
+  border: 1px solid var(--negro-intenso);
+  font-size: 2.5rem;
+}
+
+.button-contraseña:hover{
+  color:var(--blanco-agua);
+    text-shadow: 0 0 2px var(--violeta-fuego),
+    0 0 4px var(--violeta-fuego),
+    0 0 6px var(--violeta-fuego),
+    0 0 8px var(--violeta-fuego),
+    0 0 12px var(--violeta-fuego);
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+a {
+  font-size: 2.5rem;
+  color: var(--blanco-agua);
+}
+
+.button-registrate{
+  background-color: rgba(0, 0, 0, 0.445);
+  color: var(--blanco-agua);
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 1rem;
+  border: 1px solid var(--negro-intenso);
+  font-size: 2.5rem;
+}
+.button-registrate:hover{
+  color:var(--blanco-agua);
+    text-shadow: 0 0 2px var(--violeta-fuego),
+    0 0 4px var(--violeta-fuego),
+    0 0 6px var(--violeta-fuego),
+    0 0 8px var(--violeta-fuego),
+    0 0 12px var(--violeta-fuego);
+  
+}
+
+/*Tablet - netbook*/
+
+@media screen and (min-width: 768px) and (max-width: 1150px) {
+
+  /*MAIN*/
+}
+
+/*móvil*/
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+
+}

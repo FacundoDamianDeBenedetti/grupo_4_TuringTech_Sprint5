@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<!-- HEAD-->
+<%- include("../partials/head.ejs") %> 
+<!-- FIN HEAD-->
+
+
+<body>
+
+
+    <!-- HEADER + NAVBAR + LOGO -->
+    <%- include("../partials/header.ejs") %> 
+    <!-- FIN  HEADER + NAVBAR + LOGO -->
+
+
+
+    <!-- MAIN (SLIDER, PRODUCTOS DESTACADOS, MAPS) -->
+    <main>
+    <div id="container-slider">
+
+        <ul class="slider">
+            <li id="slide1">
+                <img src="images/slider-assets/slide1.png" alt="slide3">
+            </li>
+            <li id="slide2">
+                <img src="images/slider-assets/slide2.png" alt="slide3">
+            </li>
+            <li id="slide3">
+                <img src="images/slider-assets/slide3.png" alt="slide3">
+            </li>
+        </ul>
+
+        <ul class="menu">
+            <li>
+                <a href="#slide1">1</a>
+            </li>
+            <li>
+                <a href="#slide2">2</a>
+            </li>
+            <li>
+                <a href="#slide3">3</a>
+            </li>
+        </ul>
+
+    </div>
+    <h1 class="titleD">Productos Destacados</h1>
+    
+<section class="products">
+    
+    <div class="product1-inidex">
+        <a href=""><img class="productimage" src="images/productD-assets/pcCompleta.png" alt="destacado1"></a>
+        <p class="price">100.000$</p>
+    </div>
+    <div class="product2-inidex">
+        <a href=""><img class="productimage" src="images/productD-assets/tecladoYmouse.png" alt="destacado2"></a>
+        <p class="price">8000$</p>
+    </div>
+    <div class="product3-inidex">
+        <a href=""><img class="productimage" src="images/productD-assets/sillaGamer.png" alt="destacado3"></a>
+        <p class="price">25000$</p>
+    </div>
+</section>
+<!-- <h2 class="titleD">Nuestras sucursales</h2>
+
+ <div class="containermaps">
+<div class="mapa">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d105073.44366929015!2d-58.503337949736114!3d-34.61566245898787!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca3b4ef90cbd%3A0xa0b3812e88e88e87!2sBuenos%20Aires%2C%20CABA!5e0!3m2!1ses-419!2sar!4v1637785269978!5m2!1ses-419!2sar" width="400" height="150" style="border:0;" allowfullscreen="" loading="lazy"></iframe> 
+</div>
+</div> -->
+
+
+</main>
+    <!-- FIN MAIN (SLIDER, PRODUCTOS DESTACADOS, MAPS) -->
+
+
+
+
+    <!-- footer-->
+    <%- include("../partials/footer.ejs") %> 
+    <!-- fin footer-->
+</body>
+
+</html>
