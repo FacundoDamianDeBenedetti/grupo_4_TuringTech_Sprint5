@@ -1,6 +1,7 @@
 const jsonDB = require("../model/jsonDatabase"),
       modelController = jsonDB("users"),
-      {validationResult} = require("express-validator");
+      {validationResult} = require("express-validator"),
+      bcryptjs = require("bcryptjs");
 
 const userController = {
     ayuda: (req,res) => {
@@ -27,8 +28,8 @@ const userController = {
             userApellido: req.body.registroApellido,
             userUsuario:req.body.registroUsuario,
             userEmail: req.body.registroEmail,
-            userLock:req.body.registroLock,
-            userLockRepeat:req.body.registroLockRepeat,
+            userLock:bcryptjs.hashSync(req.body.registroLock,10),
+            userLockRepeat:bcryptjs.hashSync(req.body.registroLockRepeat,10),
             userAvatar:image,
             userRol:req.body.registroRol
         }
