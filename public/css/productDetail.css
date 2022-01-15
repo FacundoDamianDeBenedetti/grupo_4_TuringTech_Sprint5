@@ -23,14 +23,17 @@
 }
 
 #main__product-imgs-watch{
-    width:40rem;
+    width:100%;
     filter:drop-shadow(0 0 9px var(--violeta-fuego));
 }
 
 .main__product-imgs-title{
     background-color: var(--negro-intenso-transparente);
-    height: 40rem;
-    width: 45rem;
+    height: 100%;
+    width: 100%;
+    padding:1.5rem;
+    max-height: 40rem;
+    max-width: 45rem;
     border-radius: 1rem;
     display: flex;
     justify-content: center;
@@ -338,6 +341,7 @@
     .main__product-imgs-container{
         width: 100%;
         margin:0;
+        padding:2rem;
     }
     #main__product-imgs-watch{
         width: 100%;

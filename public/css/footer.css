@@ -80,11 +80,8 @@
 }
 
 .footer__about-p:hover{
-    text-shadow: 0 0 2px var(--violeta-fuego),
-    0 0 4px var(--violeta-fuego),
-    0 0 6px var(--violeta-fuego),
-    0 0 8px var(--violeta-fuego),
-    0 0 12px var(--violeta-fuego);
+    text-shadow: 0 0 4px var(--violeta-fuego),
+  0 0 8px var(--violeta-fuego);
 }
 
 

@@ -93,12 +93,29 @@
 
 .nav__a:hover{
     color:var(--blanco-agua);
-    text-shadow: 0 0 2px var(--violeta-fuego),
-    0 0 4px var(--violeta-fuego),
-    0 0 6px var(--violeta-fuego),
-    0 0 8px var(--violeta-fuego),
-    0 0 12px var(--violeta-fuego);
+    text-shadow: 0 0 4px var(--violeta-fuego),
+    0 0 8px var(--violeta-fuego);
 }
+
+.header__profile-container{
+    display: flex;
+    align-items: baseline;
+    position: relative;
+    width: 6rem;
+    height: 6.5rem;
+}
+
+.header__profile-img{
+    width: 6rem;
+    border-radius: 3rem;
+}
+
+/* .header__profile-arrow{
+    width: 1.2rem;
+    position: absolute;
+    left:85%;
+    top:85%;
+} */
 
 
 /*Tablet - netbook*/

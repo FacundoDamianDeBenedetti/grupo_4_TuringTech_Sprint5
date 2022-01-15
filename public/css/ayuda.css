@@ -20,12 +20,7 @@
     padding:1rem 1rem;
     text-align: center;
     border-bottom: var(--negro-intenso);
-    text-shadow: 0 0 1px var(--blanco-agua),
-    0 0 4px var(--blanco-agua),
-    0 0 7px var(--blanco-agua),
-    0 0 10px var(--blanco-agua);
-    
-    
+    color:var(--blanco-agua);
 }
 .main__h2-div {
     margin: 1rem;
@@ -46,10 +41,7 @@ hr {
     font-size: 3rem;
     margin: 2rem 0;
     font-weight: 900;
-    text-shadow: 0 0 1px var(--blanco-agua),
-    0 0 4px var(--blanco-agua),
-    0 0 7px var(--blanco-agua),
-    0 0 10px var(--blanco-agua);
+    color:var(--blanco-agua);
 }
 
 .main__h2-div-p {
@@ -93,10 +85,7 @@ hr {
     justify-content: space-evenly;
     font-size: 4rem;
     font-weight: 900;
-    text-shadow: 0 0 1px var(--blanco-agua),
-    0 0 4px var(--blanco-agua),
-    0 0 7px var(--blanco-agua),
-    0 0 10px var(--blanco-agua);
+    color:var(--blanco-agua);
 }
 
 
