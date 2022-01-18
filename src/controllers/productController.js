@@ -75,7 +75,7 @@ const productController = {
 			productVisibility: req.body.productVisibility,
 			productImportant: req.body.productImportant,
             ruta: sliced
-		   }
+		}
 
 		const productUpdated = productModel.update(productUpdate)	
 
