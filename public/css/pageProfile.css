@@ -89,7 +89,7 @@ h2 {
     
 }*/
 
-.boton-iniciar {
+.boton-iniciar-profile {
   display: flex;
   background-color: rgba(0, 0, 0, 0.445);
   color: var(--blanco-agua);
