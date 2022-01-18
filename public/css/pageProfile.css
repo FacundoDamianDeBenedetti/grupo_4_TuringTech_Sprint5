@@ -18,7 +18,7 @@ h2 {
   width: 50px;
 }
 .contenedorPadre {
-  background-color: yellow;
+  
   display: flex;
   flex-direction: row;
   align-items: center;
