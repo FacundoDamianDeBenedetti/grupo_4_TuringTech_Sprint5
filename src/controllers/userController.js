@@ -39,21 +39,21 @@ const userController = {
     if (errors.isEmpty()) {
       const registerUser = modelController.create(user);
 
-      res.redirect("/");
-    } else {
-      res.render("users/register", {
-        errors: errors.mapped(),
-        old: req.body,
-      });
-    }
-    console.log(errors);
-  },
-  restablecer: (req, res) => {
-    res.render("users/restablecer");
-  },
-  pageProfile: (req, res) => {
-    res.render("users/pageProfile");
-  },
-};
+            res.redirect("/")
+        }else{
+            res.render("users/register", {
+                errors:errors.mapped(),
+                old: req.body
+            })
+        }
+        console.log(errors);
+    },
+    restablecer: (req,res) => {
+        res.render("users/restablecer");
+    },
+    pageProfile: (req, res) => {
+        res.render("users/pageProfile");
+}
+}
 
 module.exports = userController;

@@ -42,6 +42,10 @@ router.get("/restablecer", userController.restablecer);
 //PageProfile
 router.get("/pageProfile", userController.pageProfile);
 
+//pageProfile
+
+router.get('/pageProfile',userController.pageProfile );
+
 /* Con readDetail - LEE PRODUCTO SEGUN ID */
 //router.get('/detalle/:menuId', productController.readDetail);
 
