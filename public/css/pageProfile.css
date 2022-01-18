@@ -22,14 +22,22 @@ h2 {
   display: flex;
   flex-direction: row;
   align-items: center;
-  height: 100%;
+  height: 65vh;
+  background-color: var(--rojo-fuego);
+  width: 80%;
+    border-radius: 5%;
+    border: 1px solid var(--negro-intenso);
+    margin: 4rem;
+    
+    
+    
 }
 .containerDatosPersonales {
   display: flex;
   flex-direction: column;
   height: 25rem;
   width: 25rem;
-  margin-right: 3rem;
+  margin-right: 5rem;
   justify-content: flex-end;
 }
 .containerFacturacion {
@@ -38,17 +46,17 @@ h2 {
   height: 25rem;
   width: 25rem;
   margin-top: 2rem;
-  margin-right: 3rem;
+  margin-left: 5rem;
   justify-content: flex-end;
 }
 
-.containerCondicionFiscal {
+/*.containerCondicionFiscal {
   display: flex;
   flex-direction: column;
   height: 250px;
   width: 25rem;
   justify-content: flex-end;
-}
+}*/
 .input-datosPersonales,
 .input-fiscal,
 .input-condicionFiscal {
@@ -89,7 +97,7 @@ h2 {
     
 }*/
 
-.boton-iniciar-profile {
+.boton-profile {
   display: flex;
   background-color: rgba(0, 0, 0, 0.445);
   color: var(--blanco-agua);
@@ -101,4 +109,9 @@ h2 {
   font-size: 2.5rem;
   justify-content: center;
   flex-direction: column;
+  padding: 1.8rem;
+}
+.boton-profile:hover{
+    text-shadow: 0 0 4px var(--violeta-fuego),
+  0 0 8px var(--violeta-fuego);
 }
