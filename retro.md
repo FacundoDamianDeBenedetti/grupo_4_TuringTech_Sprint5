@@ -7,12 +7,11 @@
 ### Con el equipo nos dimos cuenta de las siguientes actitudes que queremos mantener y otras que debemos mejorar.
 
 ### Comenzar a hacer: 
--llegar a las reuniones con temas definidos.
--Usar un poco mas el trello 
+-Usar un poco mas el trello
+-llegar a las clases con los videos vistos
+-ser mas organizados.
 ### Hacer más:
--mayor responsabilidad.                                                                                                                                  
--darle más importancia al diseño y detalles de la aplicación.                                                                                                                   
--practicar más
+-hacer mas reuniones                                                                                                                                                                -practicar más
 -resolver los ejercicios del playground y ponerlos en practica
 ### Continuar haciendo: 
 -seguir ayudandonos en el grupo a pesar de que no nos conectemos a reuniones virtuales.                                                                                             
