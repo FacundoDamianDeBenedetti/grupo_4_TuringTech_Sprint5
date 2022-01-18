@@ -24,6 +24,10 @@
     --rojo-fuego:#f6221783;
 }
 
+a{
+    text-decoration: none;
+}
+
 body{
     background: url("../images/background-image.jpg") fixed;
         background-size: 100% 100%;
