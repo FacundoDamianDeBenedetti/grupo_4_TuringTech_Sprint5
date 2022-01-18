@@ -34,6 +34,10 @@ router.post('/register',uploadUsers.single("registroAvatar"),validationScheme, u
 //Restablecer
 router.get('/restablecer', userController.restablecer);
 
+//pageProfile
+
+router.get('/pageProfile',userController.pageProfile );
+
 /* Con readDetail - LEE PRODUCTO SEGUN ID */
 //router.get('/detalle/:menuId', productController.readDetail);
 

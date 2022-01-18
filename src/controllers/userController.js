@@ -49,8 +49,11 @@ const userController = {
         console.log(errors);
     },
     restablecer: (req,res) => {
-        res.render("users/restablecer")
-    }
+        res.render("users/restablecer");
+    },
+    pageProfile: (req, res) => {
+        res.render("users/pageProfile");
+}
 }
 
 module.exports = userController;
