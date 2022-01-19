@@ -54,7 +54,7 @@ const userController = {
         let errors = validationResult(req)
         
         let userToLogin = modelController.findByField("userEmail",req.body.userEmail)
-        
+
         if(userToLogin){
             let comparePassword = bcryptjs.compareSync(req.body.userLock, userToLogin.userLock)
             
@@ -66,7 +66,7 @@ const userController = {
                 if(req.body.remember){
                     res.cookie("userEmail", req.body.userEmail,{maxAge: 1000 * 60})
                 }
-                return res.redirect("/")
+                return res.redirect("/pageProfile")
             }
         }
 
@@ -79,6 +79,9 @@ const userController = {
         res.clearCookie("userEmail")
         req.session.destroy()
         return res.redirect("/")
+    },
+    pageProfile:(req,res) => {
+        res.render("users/pageProfile",{userLogged: req.session.userLogged})
     }
 }
 
