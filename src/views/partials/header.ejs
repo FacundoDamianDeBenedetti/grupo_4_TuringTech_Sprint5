@@ -7,7 +7,7 @@
         </form>
         <div class="header__container-user-car">
             <div class="header__profile-container">
-                <!-- <img src="/images/users-assets/default-image.png" alt="Img de perfil" class="header__profile-img"> -->
+                <img src="/images/users-assets/<%= locals.userLogged ? locals.userLogged.userAvatar : 'default-image.png'%>" alt="Img de perfil" class="header__profile-img">
                 <!-- <img src="/images/header-assets/arrow.svg" alt="Flecha de opciones" class="header__profile-arrow"> -->
             </div>
 

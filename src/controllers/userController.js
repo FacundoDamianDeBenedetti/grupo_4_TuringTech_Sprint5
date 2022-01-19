@@ -7,9 +7,6 @@ const userController = {
     ayuda: (req,res) => {
         res.render("users/ayuda")
     },
-    login: (req,res) => {
-        res.render("users/login")
-    },
     registerGet: (req,res) => {
         res.render("users/register")
     },
@@ -46,10 +43,42 @@ const userController = {
                 old: req.body
             })
         }
-        console.log(errors);
     },
     restablecer: (req,res) => {
         res.render("users/restablecer")
+    },
+    loginGet: (req,res) => {
+        res.render("users/login")
+    },
+    loginPost:(req,res) => {
+        let errors = validationResult(req)
+        
+        let userToLogin = modelController.findByField("userEmail",req.body.userEmail)
+        
+        if(userToLogin){
+            let comparePassword = bcryptjs.compareSync(req.body.userLock, userToLogin.userLock)
+            
+            if(comparePassword){
+                delete userToLogin.userLock
+                delete userToLogin.userLockRepeat
+                req.session.userLogged = userToLogin
+                
+                if(req.body.remember){
+                    res.cookie("userEmail", req.body.userEmail,{maxAge: 1000 * 60})
+                }
+                return res.redirect("/")
+            }
+        }
+
+        return res.render("users/login",{
+            errors:errors.mapped(),
+            old:req.body
+        })
+    },
+    logout:(req,res) => {
+        res.clearCookie("userEmail")
+        req.session.destroy()
+        return res.redirect("/")
     }
 }
 

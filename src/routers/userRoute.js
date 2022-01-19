@@ -9,6 +9,10 @@ const uploadUsers = require("../middlewares/multerUsersMiddleware")
 //Require y uso de express-validator
 const {body} = require("express-validator")
 
+//Require de middlewares de aplicación para el control del comportamiento del usuario
+const authMiddleware = require("../middlewares/authMiddleware") //FAlTA PERFIL USUARIO
+const guestMiddleware = require("../middlewares/guestMiddleware")
+
 const validationScheme = [
     body("registroNombre").notEmpty(),
     body("registroApellido").notEmpty(),
@@ -25,10 +29,14 @@ const validationScheme = [
 router.get('/ayuda', userController.ayuda);
 
 //Login
-router.get('/login', userController.login);
+router.get('/login', guestMiddleware,userController.loginGet);
+router.post("/login", userController.loginPost);
+
+//Logout
+router.get("/out",userController.logout)
 
 //Registro
-router.get('/register', userController.registerGet);
+router.get('/register', guestMiddleware,userController.registerGet);
 router.post('/register',uploadUsers.single("registroAvatar"),validationScheme, userController.registerPost);
 
 //Restablecer
