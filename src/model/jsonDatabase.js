@@ -33,6 +33,11 @@ const modelController = function (name) {
             //console.log(this.readFile())
             return this.readFile();
         },
+        findByField: function(field,text) {
+            let allUsers = this.all()
+            let userFound = allUsers.find(oneUser => oneUser[field] === text)
+            return userFound
+        },
         // Busco por id
         find: function (id) {
             let rows = this.readFile();
