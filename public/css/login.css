@@ -24,7 +24,7 @@
 
 .contenedor-facebook-google {
   background-color: var(--rojo-fuego);
-  height: 250px;
+  height: 200px;
   width: 500px;
   margin-bottom: 4rem;
   padding: 1rem;
@@ -35,19 +35,19 @@
   border-radius: 10px;
 }
 
-.main__container-google button {
+.main__container-google {
   margin-top: 10px;
   border: 1px solid var(--negro-intenso);
   background-color: var(--blanco-agua);
   border-radius: 0.3rem;
   width: 300px;
-  height: 35px;
+  height: 40px;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  cursor: pointer;
 }
-.main__container-facebook button {
+
+.main__container-facebook {
   background-color: var(--blanco-agua);
   border: 1px solid var(--negro-intenso);
   border-radius: 0.3rem;
@@ -69,21 +69,23 @@
 }
 
 .imagen-facebook {
-  width: 25px;
+  width: 27px;
 }
 
 .imagen-google {
-  width: 25px;
+  width: 27px;
 }
 
 .letra-facebook {
   font-size: 2.5rem;
   color: var(--negro-intenso);
+  align-self: baseline;
 }
 
 .letra-google {
   font-size: 2.5rem;
   color: var(--negro-intenso);
+  align-self: baseline;
 }
 .form-sesion {
   display: flex;
