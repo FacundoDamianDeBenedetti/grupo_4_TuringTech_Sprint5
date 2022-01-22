@@ -32,17 +32,17 @@
         justify-content: space-around;
     }
     
-    .main__container-name,.main__container-surname,.main__container-user,.main__container-email,.main__container-lock,.main__container-lockRepeat,.main__container-avatar,.main__container-rol{
+    .main__container-name,.main__container-user,.main__container-email,.main__container-dni,.main__container-tel,.main__container-dir,.main__container-depto,.main__container-postal,.main__container-locality,.main__container-province,.main__container-lock,.main__container-lockRepeat,.main__container-avatar,.main__container-rol{
         z-index: 10;
         width:40%;
         position: relative;
     }
     
-    .main__container-name,.main__container-surname,.main__container-user,.main__container-email,.main__container-lock,.main__container-lockRepeat,.main__container-avatar,.main__container-rol{
+    .main__container-name,.main__container-user,.main__container-email,.main__container-dni,.main__container-tel,.main__container-dir,.main__container-depto,.main__container-postal,.main__container-locality,.main__container-province,.main__container-lock,.main__container-lockRepeat,.main__container-avatar,.main__container-rol{
         margin:0 0 3rem 0;
     }
     
-    .nombre::after,.apellido::after,.usuario::after, .email::after, .contrasenia::after, .contraseniarepeat::after,.avatar::after,.rol::after{
+    .nombre::after,.usuario::after, .email::after,.dni::after,.tel::after,.dir::after,.depto::after,.postal::after,.locality::after,.province::after, .contrasenia::after, .contraseniarepeat::after,.avatar::after,.rol::after{
         width: 110%;
         display: block;
         margin: 1rem 0 0 0;
@@ -51,19 +51,43 @@
     }
     
     .nombre::after{
-        content: "El nombre no puede contener números ni caracteres que no sean letras. Ni contener el campo vacío";
-    }
-
-    .apellido::after{
-        content: "El apellido no puede contener números ni caracteres que no sean letras. Ni contener el campo vacío";
+        content: "El nombre y apellido no puede contener números ni caracteres que no sean letras. Ni contener el campo vacío";
     }
     
     .usuario::after{
-        content: "Su nombre de usuario solamente puede contener caracteres alfanuméricos. Ni contener el campo vacío";
+        content: "Su nombre de usuario solamente puede contener caracteres alfanuméricos. Ni contener el campo vacío, con una longitud máxima de 20 caracteres";
     }
     
     .email::after{
         content: "Su email solamente puede contener caracteres alfanuméricos, guiones medio, guiones bajos y un @ como intermediario. Ni contener el campo vacío";
+    }
+    
+    .dni::after{
+        content: "Su DNI debe contener obligatoriamente una longitud de 8 números y sin ningún otro tipo de caracter";
+    }
+    
+    .tel::after{
+        content: "Su número de teléfono debe contener una longitud de 10 números, no se aceptan números extranjeros";
+    }
+    
+    .dir::after{
+        content: "Su dirección fiscal debe contener solamente caracteres alfanuméricos";
+    }
+    
+    .postal::after{
+        content: "Su código postal debe contener solamente caracteres alfanuméricos";
+    }
+    
+    .depto::after{
+        content: "Su departamento/piso debe contener solamente caracteres alfanuméricos";
+    }
+    
+    .locality::after{
+        content: "Su localidad solamente puede contener letras, sin ningún otro tipo de caracter, con una longitud máxima de 30 caracteres";
+    }
+    
+    .province::after{
+        content: "Su provincia solamente puede contener letras, sin ningún otro tipo de caracter,con una longitud máxima de 30 caracteres";
     }
     
     .contrasenia::after{
@@ -89,6 +113,7 @@
 
     .main__bluebox img{
         width: 5rem;
+        height: 2rem;
         filter:invert(100%) sepia(42%) saturate(3179%) hue-rotate(178deg) brightness(102%) contrast(94%);
     }
     
@@ -235,11 +260,6 @@
         align-items: center;
         justify-content:center;
         /* margin-left:-2.5rem; */
-    }
-
-    .main__bluebox img{
-        width: 5rem;
-        filter:invert(100%) sepia(42%) saturate(3179%) hue-rotate(178deg) brightness(102%) contrast(94%);
     }
     
     .main__register{

@@ -10,16 +10,22 @@ const uploadUsers = require("../middlewares/multerUsersMiddleware");
 const { body } = require("express-validator");
 
 //Require de middlewares de aplicación para el control del comportamiento del usuario
-const authMiddleware = require("../middlewares/authMiddleware") //FAlTA PERFIL USUARIO
+const authMiddleware = require("../middlewares/authMiddleware")
 const guestMiddleware = require("../middlewares/guestMiddleware")
 
 const validationScheme = [
-  body("registroNombre").notEmpty(),
-  body("registroApellido").notEmpty(),
-  body("registroUsuario").notEmpty(),
+  body("registroFullname").notEmpty().isString(),
+  body("registroUsuario").notEmpty().isAlphanumeric('es-ES',{ignore:'\s'}).isLength({min:1, max:20}),
   body("registroEmail").notEmpty().isEmail(),
-  body("registroLock").notEmpty(),
-  body("registroLockRepeat").notEmpty(),
+  body("registroDni").notEmpty().isNumeric().isLength({min:8, max:8}),
+  body("registroTel").notEmpty().isNumeric().isLength({min:10, max:10}),
+  body("registroDir").notEmpty().isAlphanumeric('es-ES',{ignore:'\s'}),
+  body("registroDepto").isAlphanumeric('es-ES',{ignore:'\s'}).optional({nullable: true,checkFalsy:true}),
+  body("registroPostal").notEmpty().isAlphanumeric('es-ES',{ignore:'\s'}),
+  body("registroLocality").notEmpty().isString().isLength({min:1, max:30}),
+  body("registroProvince").notEmpty().isString().isLength({min:1, max:30}),
+  body("registroLock").notEmpty().isAlphanumeric('es-ES',{ignore:'\s'}),
+  body("registroLockRepeat").notEmpty().isAlphanumeric('es-ES',{ignore:'\s'}),
   body("registroAvatar").optional(),
   body("registroRol").notEmpty(),
 ];
@@ -42,12 +48,8 @@ router.post('/register',uploadUsers.single("registroAvatar"),validationScheme, u
 //Restablecer
 router.get("/restablecer", userController.restablecer);
 
-//PageProfile
-router.get("/pageProfile", userController.pageProfile);
-
 //pageProfile
-
-router.get('/pageProfile',userController.pageProfile );
+router.get('/pageProfile', authMiddleware,userController.pageProfile );
 
 /* Con readDetail - LEE PRODUCTO SEGUN ID */
 //router.get('/detalle/:menuId', productController.readDetail);

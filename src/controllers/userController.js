@@ -21,10 +21,16 @@ const userController = {
         }
 
         let user = {
-            userNombre: req.body.registroNombre,
-            userApellido: req.body.registroApellido,
+            userFullname: req.body.registroFullname,
             userUsuario:req.body.registroUsuario,
             userEmail: req.body.registroEmail,
+            userDni: req.body.registroDni,
+            userTel: req.body.registroTel,
+            userDir: req.body.registroDir,
+            userDepto: req.body.registroDepto,
+            userPostal: req.body.registroPostal,
+            userLocality: req.body.registroLocality,
+            userProvince: req.body.registroProvince,
             userLock:bcryptjs.hashSync(req.body.registroLock,10),
             userLockRepeat:bcryptjs.hashSync(req.body.registroLockRepeat,10),
             userAvatar:image,

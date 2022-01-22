@@ -92,6 +92,24 @@
   flex-direction: column;
 }
 
+#remember{
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.remember__text{
+  font-size: 2rem;
+  color:var(--blanco-agua);
+  margin-left:1rem;
+}
+
+.main__container-remember{
+  display: flex;
+  margin-top:1rem;
+  width: 100%;
+  justify-content: flex-start;
+}
+
 .boton-iniciar {
   background-color: rgba(0, 0, 0, 0.445);
   color: var(--blanco-agua);
