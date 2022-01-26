@@ -2,13 +2,16 @@
 const express = require("express"),
   path = require("path"),
   app = express(),
-  methodOverride = require("method-override");
+  methodOverride = require("method-override"),
+  session = require("express-session"),
+  cookies = require("cookie-parser");
 
-//Requires de rutas
-const productRutas = require("./src/routers/productRoute"),
+  //Requires de rutas
+  const productRutas = require("./src/routers/productRoute"),
   usersRutas = require("./src/routers/userRoute");
-
-//Require middlewares globales
+  
+  //Require middlewares globales
+  const userLoggedMiddleware = require("./src/middlewares/userLoggedMiddleware");
 
 //Carpeta estática de archivos públicos (imágenes,css, etc.)
 app.use(express.static(path.resolve(__dirname, "./public")));
@@ -29,7 +32,18 @@ app.listen(process.env.PORT || 3000, () => {
   console.log("Servidor prendido");
 });
 
-//Uso middlewares Globales
+//Uso de express-session
+app.use(session({
+  secret: "Secret Session",
+  resave:false,
+  saveUninitialized:false
+}))
+
+//Uso de cookie-parser
+app.use(cookies())
+
+//Uso de middleware de session, es necesario emplearlo posteriormente al uso de express-session
+app.use(userLoggedMiddleware)
 
 //Uso de rutas requeridas
 app.use("/", productRutas);

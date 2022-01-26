@@ -7,18 +7,17 @@
     border:3px solid var(--negro-intenso);
     width: 80%;
     margin: auto;
-    text-align: center;
     margin: 3rem auto;
+    text-align: center;
     padding: 1rem;
-
 }
 .main__h2-ayuda {
-    
+    display:block;
+    text-align: center;
     font-size: 3.5rem;
     font-weight: 900;
     line-height: 0.5;
     padding:1rem 1rem;
-    text-align: center;
     border-bottom: var(--negro-intenso);
     color:var(--blanco-agua);
 }
