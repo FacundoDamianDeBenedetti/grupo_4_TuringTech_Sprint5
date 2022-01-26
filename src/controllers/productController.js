@@ -48,7 +48,7 @@ const productController = {
         console.log(product.ruta);
 
 		const productCreate = productModel.create(product)
-
+        
 		res.redirect(`/products/${req.body.productCategory}`)
     },
     productEdit: (req,res) => {
