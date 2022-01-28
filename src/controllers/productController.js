@@ -46,7 +46,7 @@ const productController = {
 		}
 
 		const productCreate = productModel.create(product)
-
+        
 		res.redirect(`/products/${req.body.productCategory}`)
     },
     productEdit: (req,res) => {

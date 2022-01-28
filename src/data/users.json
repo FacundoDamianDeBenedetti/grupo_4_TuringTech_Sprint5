@@ -1,1 +1,36 @@
-[]
+[
+ {
+  "userFullname": "Facundo De Benedetti",
+  "userUsuario": "Facundo",
+  "userEmail": "facundodebenedetti09@turing.com",
+  "userDni": "39760901",
+  "userTel": "1568121495",
+  "userDir": "zuviria 6830",
+  "userDepto": "pb",
+  "userPostal": "1439",
+  "userLocality": "villa lugano",
+  "userProvince": "argentina",
+  "userLock": "$2a$10$UPzleiMm7fBn39NLaGDTW.KywRmn/nqdrwp03FI4hCbei5upELsOy",
+  "userLockRepeat": "$2a$10$VylSW3HQiNog5lHwpRW45.lpZzqrAdsU7DcI6exGzdBJ/0p4YQ61y",
+  "userAvatar": "1643208022578-descarga.jpg",
+  "userRol": "Comprador",
+  "id": 1
+ },
+ {
+  "userFullname": "testing",
+  "userUsuario": "probando123",
+  "userEmail": "probando123@test.com",
+  "userDni": "03030303",
+  "userTel": "4545454545",
+  "userDir": "obelisco 1234",
+  "userDepto": "pb",
+  "userPostal": "1431",
+  "userLocality": "almagro",
+  "userProvince": "argentina  ",
+  "userLock": "$2a$10$M/JBhzJGOolTVJtjqoOxHeXu5STcmRVMw5RKymLDgiyrv7MK.FofG",
+  "userLockRepeat": "$2a$10$TAOghH8bchls7KWKbDI4PupLPKL6zWPrZz.k.JLmXRUg8s.mHX.p.",
+  "userAvatar": "1643289226992-images.jpg",
+  "userRol": "Comprador",
+  "id": 2
+ }
+]

@@ -12,7 +12,7 @@
   "productDiscount": "10",
   "productImage1": "1641336257104-ryzen5.png",
   "productVisibility": "activo",
-  "productImportant": "destacado-si",
+  "productImportant": "true",
   "ruta": "productos-assets\\procesadores-amd\\1641336257104-ryzen5.png"
  },
  {
@@ -27,7 +27,7 @@
   "productDiscount": "10",
   "productImage1": "1641349549865-placa-de-video-1.png",
   "productVisibility": "activo",
-  "productImportant": "destacado-si",
+  "productImportant": "true",
   "ruta": "productos-assets\\Placa-de-video\\1641349549865-placa-de-video-1.png",
   "id": 2
  }
