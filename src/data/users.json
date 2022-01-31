@@ -32,5 +32,22 @@
   "userAvatar": "1643289226992-images.jpg",
   "userRol": "Comprador",
   "id": 2
+ },
+ {
+  "userFullname": "Ffafa",
+  "userUsuario": "fafa",
+  "userEmail": "fafa@gmail.com",
+  "userDni": "39702501",
+  "userTel": "2020202020",
+  "userDir": "zuvir 2020",
+  "userDepto": "pb",
+  "userPostal": "1439",
+  "userLocality": "caba",
+  "userProvince": "argentina",
+  "userLock": "$2a$10$cr5qVbyKiG1X4Rva.2oRpu01n64rL7GVcUlDRIK8GeAaZ6VBLTvqO",
+  "userLockRepeat": "$2a$10$wI53CZbHB8lCLmjlSIu2mO.nJ2JNoW7cRAvoFP22xVCoF1Lvff7ou",
+  "userAvatar": "1643325380024-images.jpg",
+  "userRol": "Comprador",
+  "id": 3
  }
 ]
